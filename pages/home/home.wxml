@@ -1,0 +1,33 @@
+<scroll-view class="container">
+
+  <view  class="trip_list" wx:for="{{list}}" wx:for-item="trip">
+    <view class="trip_item">
+      <view class="line clearfix">
+        <view class="info_item left trip_name">{{trip.name}}</view>
+      </view>
+      <view class="line">
+        <view class="info_item left">出发时间</view>
+        <view class="info_item right">{{trip.time}}</view>
+      </view>
+      <view class="line clearfix">
+        <view class="info_item left">目标人数</view>
+        <view class="info_item right">{{trip.current}} / {{trip.target}}人</view>
+      </view>
+      <view class="line clearfix">
+        <view class="info_item left">{{trip.leader}}</view>
+        <view class="info_item right">{{trip.score}}</view>
+      </view>
+      <view class="line clearfix">
+        <view class="info_item left">男女比例</view>
+        <view class="info_item right">男 {{trip.male}}%   女{{trip.female}}%</view>
+      </view>
+      
+      <view class="trip_content">内容：{{trip.content}}</view>
+      <view class="trip_footer">
+        <button class='{{trip.isin? "":"green"}}'>{{trip.isin? "已加入":"加入"}}</button>
+      </view>
+    </view>
+    
+  </view>
+
+</scroll-view>

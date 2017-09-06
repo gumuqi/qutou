@@ -1,0 +1,41 @@
+.container{
+  background: #f2f2f2;
+}
+
+.trip_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex:1;
+  padding: 10rpx;
+  color: #333;
+}
+.trip_item{
+  /*flex:1;*/
+  padding: 16px;
+  border:1px #f2f2f2 solid;
+  background: #fff;
+}
+.trip_item .trip_name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10rpx;
+  color: #666;
+}
+.trip_item .line {
+  display: block;
+  margin-bottom: 4rpx;
+}
+.info_item {
+  width: 50%;
+}
+.trip_content {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 0.8rem;
+  color: rgb(171, 157, 150);
+}
+.trip_footer .green {
+  background: #0bc7b4;
+  color: #fff;
+}
